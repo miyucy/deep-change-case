@@ -1,4 +1,5 @@
-const { camelCase, snakeCase } = require("change-case");
+const camelCase = require('camel-case');
+const snakeCase = require('snake-case');
 
 function changeCase(converter) {
   const convertKeys = object => {
