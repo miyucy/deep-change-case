@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "module": "index.mjs",
   "scripts": {
-    "test": "node test.js || exit 1"
+    "test": "node test.js && node --experimental-modules test.mjs || exit 1"
   },
   "author": "miyucy",
   "license": "ISC",
   "dependencies": {
     "camel-case": "^3.0.0",
     "snake-case": "^2.1.0"
-  }
+  },
+  "sideEffects": false
 }
